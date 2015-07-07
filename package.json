@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/entipic/entipic.url/issues"
   },
-  "homepage": "https://github.com/entipic/entipic.url"
+  "homepage": "https://github.com/entipic/entipic.url",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }

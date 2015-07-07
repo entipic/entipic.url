@@ -45,7 +45,7 @@ describe('url', function() {
 		assert.equal(url('name', 'en', 'us'), 'http://i.entipic.com/en-us/name.jpg');
 		assert.equal(url('name', 'en'), 'http://i.entipic.com/en/name.jpg');
 		assert.equal(url('name', 'c', 'en'), 'http://i.entipic.com/en/c/name.jpg');
-		assert.equal(url('Brack Obama'), 'http://i.entipic.com/en/c/name.jpg');
+		// assert.equal(url('Brack Obama'), 'http://i.entipic.com/en/c/name.jpg');
 	});
 
 });
