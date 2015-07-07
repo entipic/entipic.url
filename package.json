@@ -1,0 +1,28 @@
+{
+  "name": "entipic.url",
+  "version": "0.0.1",
+  "description": "entipic picture url builder",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/entipic/entipic.url.git"
+  },
+  "keywords": [
+    "entipic",
+    "url",
+    "picture",
+    "src"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entipic/entipic.url/issues"
+  },
+  "homepage": "https://github.com/entipic/entipic.url"
+}
