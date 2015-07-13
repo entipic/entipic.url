@@ -90,7 +90,7 @@
 		return parts.join('/') + '.jpg';
 	}
 
-	return function entipicUrl(name, size, lang, country) {
+	var entipicUrl = function entipicUrl(name, size, lang, country) {
 		if (isObject(name)) {
 			return url(name);
 		}
@@ -102,4 +102,22 @@
 			country: country
 		});
 	};
+
+	entipicUrl.picture = function(id, size) {
+		if (!isString(id)) {
+			throw new Error('Entipic `id` param is invalid!');
+		}
+		var parts = [HOST, 'picture'];
+		if (!isUndefined(size)) {
+			if (SIZES.indexOf(size) < 0) {
+				throw new Error('Entipic `size` param is invalid!');
+			}
+			parts.push(size);
+		}
+		parts.push(id);
+
+		return parts.join('/') + '.jpg';
+	};
+
+	return entipicUrl;
 });
