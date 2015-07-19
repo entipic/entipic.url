@@ -32,11 +32,11 @@ describe('picture', function() {
 	});
 
 	it('("name") - just id', function() {
-		assert.equal(url.picture('name'), 'http://i.entipic.com/picture/name.jpg');
+		assert.equal(url.picture('name'), 'http://cdn.entipic.com/picture/name.jpg');
 	});
 
 	it('("name", "a") - all params', function() {
-		assert.equal(url.picture('name', 'a'), 'http://i.entipic.com/picture/a/name.jpg');
+		assert.equal(url.picture('name', 'a'), 'http://cdn.entipic.com/picture/a/name.jpg');
 	});
 
 });
