@@ -31,7 +31,7 @@
 	/**
 	 * Temp host
 	 */
-	var HOST = 'http://i.entipic.com';
+	var HOST = 'http://cdn.entipic.com';
 	var SIZES = ['z', 'a', 'b', 'c', 'd', 'e'];
 
 
