@@ -8,5 +8,15 @@ Build entipic picture url.
 var entipicUrl = require('entipic.url');
 
 entipicUrl('Brack Obama');
-// output: http://i.entipic.com/Brack%20Obama.jpg
+// output: http://cdn.entipic.com/Brack_Obama.jpg
+entipicUrl('Brack Obama', 'en', 'us');
+// output: http://cdn.entipic.com/en-us/Brack_Obama.jpg
+entipicUrl('Brack Obama', 'b', 'en');
+// output: http://cdn.entipic.com/en/b/Brack_Obama.jpg
 ```
+
+## API
+
+#### entipicUrl(name, size, lang, country)
+
+#### entipicUrl.picture(id, size)

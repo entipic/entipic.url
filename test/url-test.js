@@ -36,7 +36,7 @@ describe('url', function() {
 
 	it('("name") - just name', function() {
 		assert.equal(url('name'), 'http://cdn.entipic.com/name.jpg');
-		assert.equal(url('Title Name'), 'http://cdn.entipic.com/Title%20Name.jpg');
+		assert.equal(url('Title Name'), 'http://cdn.entipic.com/Title_Name.jpg');
 	});
 
 	it('("name", "a", "en", "us") - all params', function() {
@@ -47,6 +47,13 @@ describe('url', function() {
 		assert.equal(url('name', 'en', 'us'), 'http://cdn.entipic.com/en-us/name.jpg');
 		assert.equal(url('name', 'en'), 'http://cdn.entipic.com/en/name.jpg');
 		assert.equal(url('name', 'c', 'en'), 'http://cdn.entipic.com/en/c/name.jpg');
+		// assert.equal(url('Brack Obama'), 'http://i.entipic.com/en/c/name.jpg');
+	});
+
+	it('("name", "a") - names with spaces', function() {
+		assert.equal(url(' name 	\n', 'en', 'us'), 'http://cdn.entipic.com/en-us/name.jpg');
+		assert.equal(url('d 	\n\rname', 'en'), 'http://cdn.entipic.com/en/d_name.jpg');
+		assert.equal(url(' \r name 	$\n a', 'c', 'en'), 'http://cdn.entipic.com/en/c/name_%24_a.jpg');
 		// assert.equal(url('Brack Obama'), 'http://i.entipic.com/en/c/name.jpg');
 	});
 
