@@ -32,7 +32,7 @@
 	 * Temp host
 	 */
 	var HOST = 'http://cdn.entipic.com';
-	var SIZES = ['z', 'a', 'b', 'c', 'd', 'e'];
+	var SIZES = ['x', 'a', 'b', 'c', 'd', 'e'];
 
 
 	function isString(target) {
