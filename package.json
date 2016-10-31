@@ -1,6 +1,6 @@
 {
   "name": "entipic.url",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "entipic picture url builder",
   "main": "index.js",
   "directories": {
