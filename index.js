@@ -85,8 +85,9 @@
 
 		options.name = options.name.trim();
 		options.name = options.name
-			.replace(/[\s_]{2,}/gi, ' ')
-			.replace(/ /gi, '_');
+			.replace(/[\s_]/g, ' ')
+			.trim()
+			.replace(/[\s]+/g, '_');
 
 		options.name = encodeURIComponent(options.name);
 		parts.push(options.name);

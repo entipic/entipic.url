@@ -54,7 +54,7 @@ describe('url', function() {
 		assert.equal(url(' name 	\n', 'en', 'us'), 'http://cdn.entipic.com/en-us/name.jpg');
 		assert.equal(url('d 	\n\rname', 'en'), 'http://cdn.entipic.com/en/d_name.jpg');
 		assert.equal(url(' \r name 	$\n a', 'c', 'en'), 'http://cdn.entipic.com/en/c/name_%24_a.jpg');
-		// assert.equal(url('Brack Obama'), 'http://i.entipic.com/en/c/name.jpg');
+		assert.equal(url('Brack Obama'), 'http://cdn.entipic.com/Brack_Obama.jpg');
 	});
 
 });
