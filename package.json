@@ -1,6 +1,6 @@
 {
   "name": "entipic.url",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "entipic picture url builder",
   "main": "index.js",
   "directories": {
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/entipic/entipic.url",
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^9.0.0"
   }
 }

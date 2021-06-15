@@ -4,8 +4,8 @@ Build entipic picture url.
 
 ## Usage
 
-```
-var entipicUrl = require('entipic.url');
+```js
+const entipicUrl = require('entipic.url');
 
 entipicUrl('Brack Obama');
 // output: http://cdn.entipic.com/Brack_Obama.jpg
@@ -20,3 +20,13 @@ entipicUrl('Brack Obama', 'b', 'en');
 #### entipicUrl(name, size, lang, country)
 
 #### entipicUrl.picture(id, size)
+
+
+#### entipicUrl.create(host)
+
+```js
+const entipicUrl = require('entipic.url');
+const instance = entipicUrl.create("https://cdn.entipic.com");
+instance('Brack Obama');
+// output: https://cdn.entipic.com/Brack_Obama.jpg
+```
